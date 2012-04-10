@@ -1,0 +1,22 @@
+build
+lib
+pom.xml
+
+# use glob syntax.
+syntax: glob
+*.class
+*.jar
+*~
+.DS_Store
+*.#*
+*#*
+*.classpath
+*.project
+*.settings
+*.dot
+.lein-failures
+.lein-deps-sum
+doc
+*.ipr
+*.iws
+*.iml
