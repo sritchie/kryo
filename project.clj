@@ -1,11 +1,12 @@
-(defproject com.esotericsoftware.kryo/kryo "2.01"
+(defproject com.esotericsoftware.kryo/kryo "2.02"
   :description "Fast, efficient Java serialization"
   :java-source-path "src"
   :jvm-opts ["-Xmx768m" "-server"]
   :junit [["classes"]]
   :junit-options {:fork "off" :haltonfailure "on"}
   :javac-source-path [["src"] ["test"]]
-  :dependencies [[com.googlecode/reflectasm "1.01"]
+  :repositories {"conjars" "http://conjars.org/repo/"}
+  :dependencies [[com.esotericsoftware.reflectasm/reflectasm "1.02"]
                  [com.googlecode/minlog "1.2"]]
   :dev-dependencies [[junit "4.8.2"]
                      [lein-javac "1.3.0"]
